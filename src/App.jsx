@@ -3,7 +3,6 @@ import { Routes, Route, NavLink } from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/About'
 import Cart from './pages/Cart'
-import Collection from './pages/collection'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Orders from './pages/Orders'
@@ -11,11 +10,14 @@ import Placeholders from './pages/Placeholders'
 import Product from './pages/Product'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
+import Collection from './pages/Collection'
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <Navbar />
+      <SearchBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
